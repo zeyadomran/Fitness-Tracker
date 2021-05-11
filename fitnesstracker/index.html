@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i" rel="stylesheet">
+    <title>Fitness Tracker</title>
+</head>
+
+<body onload="startup()">
+    <nav>
+        <div class="main__nav">
+            <div class="main__nav--logo-cont">
+                <svg class="main__nav--logo">
+                    <use xlink:href="resources/svg/sprite.svg#running"></use>
+                </svg>
+            </div>
+            <ul class="main__nav--options">
+                <li class="main__nav--option main__nav--option--active"><a class="main__nav--option--text" href="#">
+                        <svg class="main__nav--icon">
+                            <use xlink:href="resources/svg/sprite.svg#home-icon-silhouette"></use>
+                        </svg>Home</a></li>
+                <li class="main__nav--option"><a class="main__nav--option--text" id="1" href="#">
+                        <svg class="main__nav--icon">
+                            <use xlink:href="resources/svg/sprite.svg#medical-history"></use>
+                        </svg>BMI</a></li>
+                <li class="main__nav--option"><a class="main__nav--option--text" href="#">
+                        <svg class="main__nav--icon">
+                            <use xlink:href="resources/svg/sprite.svg#fast-food"></use>
+                        </svg>FOOD & Drinks</a></li>
+                <li class="main__nav--option"><a class="main__nav--option--text" href="#">
+                        <svg class="main__nav--icon">
+                            <use xlink:href="resources/svg/sprite.svg#weightlifting"></use>
+                        </svg>EXERCISE</a></li>
+                <li class="main__nav--option main__nav--option--active-1" onclick="logout()"><a class="main__nav--option--text"
+                        href="" onclick="logout()">
+                        <svg class="main__nav--icon">
+                            <use xlink:href="resources/svg/sprite.svg#logout"></use>
+                        </svg>Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div class="content">
+                <h1 class="heading-3" id="welcomemsg"></h1>
+                <div class="userInfo">
+                    <h3 class="heading-4" id="field-1">BMI</h3>
+                    <h3 class="heading-4" id="field-2">Weight</h3>
+                    <h3 class="heading-4" id="field-3">Goal</h3>
+                    <h3 class="heading-4" id="field-4">Total Calories</h3>
+                    <h3 class="heading-4" id="field-5">Calouries Gained</h3>
+                    <h3 class="heading-4" id="field-6">Calories Lost</h3>
+                </div>
+                <div class="userTable">
+                    <table>
+                        <thead>
+                            <th style="width: 25%;">ID</th>
+                            <th style="width: 25%">Type</th>
+                            <th style="width: 25%">Name</th>
+                            <th style="width: 25%">Calories</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </header>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

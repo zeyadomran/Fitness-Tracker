@@ -1,0 +1,26 @@
+{
+  "name": "fitness-tracker",
+  "version": "0.1.0",
+  "description": "A simple Fitness Tracker.",
+  "main": "main.js",
+  "scripts": {
+    "watch:sass": "node-sass fitnesstracker/sass/base.scss fitnesstracker/css/style.css -w",
+    "start:electron": "electron . -titlebarAppearsTransparent=YES",
+    "start": "npm-run-all --parallel watch:sass start:electron",
+    "compile:sass": "node-sass fitnesstracker/sass/base.scss fitnesstracker/css/style.comp.css",
+    "concat:css": "concat -o fitnesstracker/css/style.concat.css fitnesstracker/css/icon-font.css fitnesstracker/css/style.comp.css 'DONT USE NOW'",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' fitnesstracker/css/style.comp.css -o fitnesstracker/css/style.prefix.css",
+    "compress:css": "node-sass fitnesstracker/css/style.prefix.css fitnesstracker/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Zeyad Omran <ziomran@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.5",
+    "concat": "^1.0.3",
+    "electron": "^4.0.1",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.1"
+  }
+}

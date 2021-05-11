@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: [sidebar-start] 30vh [sidebar-end full-start] 70vh [full-end]
+    
+}
+
+main {
+    grid-column: full-start / full-end;
+    display: grid;
+    height: 100vh;
+    overflow: scroll;
+    grid-template-rows: repeat(4, minmax(100vh, min-content));
+    grid-template-columns: [content-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [content-end];
+}

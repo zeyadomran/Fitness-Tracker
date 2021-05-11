@@ -1,0 +1,9 @@
+header {
+    min-height: 100vh;
+    background-color: var(--bg);
+    grid-column: content-start / content-end;
+    grid-row: 1 / 2;
+}
+
+.content {
+}

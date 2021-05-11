@@ -1,0 +1,43 @@
+.input__field {
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: none;
+    border-bottom: .3rem solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s;
+    font-weight: 700; 
+    letter-spacing: .1rem;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(#000, .1);
+        border-bottom: .3rem solid var(--secondary-clr-dark);
+    }
+
+    &:focus:invalid {
+        border-bottom: .3rem solid var(--secondary-clr);
+    }
+
+    &::-webkit-input-placeholder {
+        color: var(--text-light);
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
+
+    &--l {
+        margin-bottom: 4rem;
+    }
+
+    &--l-1 {
+        margin-bottom: 2rem;
+    }
+}

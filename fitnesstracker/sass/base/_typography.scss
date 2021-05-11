@@ -1,0 +1,39 @@
+%heading {
+    font-weight: 400;
+    font-family: var(--primary-font);
+}
+
+.heading-1 {
+    @extend %heading;
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 5rem;
+    color: var(--text-medium);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 3rem;
+    color: var(--text-medium);
+    font-weight: 700;
+    text-transform: uppercase;
+}

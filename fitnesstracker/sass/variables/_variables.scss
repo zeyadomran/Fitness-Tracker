@@ -1,0 +1,35 @@
+:root {
+    --primary-clr-light: #8282FF;
+    --primary-clr: #6868f6;
+    --primary-clr-dark: #4F4FDD;
+
+    --secondary-clr-light: #8FFFBC;
+    --secondary-clr: #75FAA2;
+    --secondary-clr-dark: #5CE189;
+
+    --tertiary-clr-light: #74E4FF;
+    --tertiary-clr: #5ACAFA;
+    --tertiary-clr-dark: #41B1E1;
+
+    --accent-clr-light: #FF8A85;
+    --accent-clr: #EE706B;
+    --accent-clr-dark: #D55752;
+
+    --text-dark: #121212;
+    --text-medium: #333;
+    --text-light: #888;
+
+    --text-white-dark: #ababab;
+    --text-white-medium: #cdcdcd;
+    --text-white-light: #eee;
+
+    --bg: #fff;
+
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+:root .dark {
+    // use on body element
+    --bg: #444;
+}
